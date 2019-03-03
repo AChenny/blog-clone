@@ -1,0 +1,14 @@
+/*
+COLOR PALLETE INIT FOR FRANK
+TEXT COLOR: 3399FF
+SECONDARY TEXT: 003366
+PRIMARY: FFCC99
+SECONDARY: FF9966
+ */
+h1 {
+  width: 100%;
+  margin: 0 0;
+  text-align:center;
+  color: #FFCC99;
+  background-color: #FF9966
+}
