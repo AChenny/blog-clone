@@ -5,10 +5,36 @@ SECONDARY TEXT: 003366
 PRIMARY: FFCC99
 SECONDARY: FF9966
  */
-h1 {
+html, body {
+  height: 100%;
+  background-color: #003366;
+  border: 0px;
+}
+
+body {
+  margin: 0px;
+}
+
+/* Title of the blog page */
+#titleHeading {
   width: 100%;
+  height: 10%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FF9966;
   margin: 0 0;
-  text-align:center;
+}
+
+h1 {
+  /* text-align: center; */
   color: #FFCC99;
-  background-color: #FF9966
+  margin: 0 0;
+}
+
+#blogEntries {
+  width: 50%;
+  height: 100%;
+  margin: 0px auto;
+  background-color: #3399FF;
 }
