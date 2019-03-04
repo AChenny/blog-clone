@@ -38,3 +38,9 @@ h1 {
   margin: 0px auto;
   background-color: #3399FF;
 }
+
+.entry {
+  display: block;
+  background-color: #FF9966;
+  border-radius: 10px;
+}
