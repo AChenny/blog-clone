@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Jquery functions
 
 $(document).keypress(entryKeyPress(event));
@@ -14,3 +15,5 @@ function entryKeyPress(e) {
     addEntry("Frank", "Keypressed on entry");
   }
 }
+=======
+>>>>>>> parent of f070d0e... Added addEntry function
