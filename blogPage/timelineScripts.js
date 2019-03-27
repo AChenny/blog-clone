@@ -1,8 +1,6 @@
-<<<<<<< HEAD
 // Jquery functions
 
-$(document).keypress(entryKeyPress(event));
-//Regular JS functions
+// //Regular JS functions
 function addEntry(userName, data) {
   // var blogEntries = document.getElementById("blogEntries");
   $("#blogEntries").append("<div class='entry'>" +
@@ -10,10 +8,12 @@ function addEntry(userName, data) {
     "<p>" + data + "<p>" + "</div>" );
 }
 
-function entryKeyPress(e) {
-  if (e.keyCode == 13) {
-    addEntry("Frank", "Keypressed on entry");
-  }
-}
-=======
->>>>>>> parent of f070d0e... Added addEntry function
+$(function() {
+    $(".textBox").keypress(function (e) {
+        if(e.which == 13) {
+            addEntry("Frank", "Enter Key Logged");
+            $(this).val("");
+            e.preventDefault();
+        }
+    });
+});
