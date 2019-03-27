@@ -11,9 +11,9 @@ function addEntry(userName, data) {
 $(function() {
     $(".textBox").keypress(function (e) {
         if(e.which == 13) {
-            addEntry("Frank", "Enter Key Logged");
-            $(this).val("");
-            e.preventDefault();
+          addEntry("Frank", this.value);
+          $(this).val("");
+          e.preventDefault();
         }
     });
 });
