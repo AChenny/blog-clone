@@ -1,12 +1,6 @@
 <!--
 Author: Anderson Chen
 Description: A page for the user to post as their own "timeline"
-TODO: Style the sheet using bootstrap
-TODO: Add a function to specify who's timeline it is
-TODO: Add a timeline description div for the user
-TODO: Create an entry box that will take in the client username and the data in
-box to post via addEntry function
-TODO: Add a way to seperate the blog entries in their own div or section
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -20,23 +14,38 @@ TODO: Add a way to seperate the blog entries in their own div or section
     <link rel="stylesheet" href="timelineStyles.css"/>
     <!--Jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
     <script src="timeLineScripts.js"></script>
   </head>
   <body>
-    <div id="titleHeading">
-      <h1>Frank</h1>
-    </div>
-    <textarea class="textBox"  rows="8" cols="80"></textarea>
-      <!--Blog entries will start with a username then the content-->
-      <!--Test Blog entry-->
-    <div id="blogEntries">
-      <div class="entry">
-        <h2>Frank</h2>
-        <p>This is a test entry, the
-          number of characters will be considered for later.</p>
+
+    <div class="">
+      <!--Heading-->
+      <div class="row no-gutters">
+        <div class="col">
+          <div id="titleHeading">
+            <h1>Frank</h1>
+          </div>
+        </div>
       </div>
-    </div>
+
+      <!--Textbox For User Entry-->
+      <div class="row">
+        <div class="col">
+          <textarea class="textBox" rows="8" cols="80"></textarea>
+        </div>
+      </div>
+
+      <!--Test Blog entry-->
+      <div class="row">
+        <div id="blogEntries">
+          <div class="entry">
+            <h2>Frank</h2>
+            <p>This is a test entry, the
+              number of characters will be considered for later.</p>
+          </div>
+        </div>
+      </div>
+
     <!--Popper.js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <!--Bootstrap scripts-->

@@ -53,4 +53,7 @@ h1 {
 .textBox {
   display: block;
   margin: 0px auto;
+  width: 50%;
+  height: 100px;
+  border-radius: 10px;
 }
